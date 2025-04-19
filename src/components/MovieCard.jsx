@@ -1,13 +1,19 @@
-import {Link} from 'react-router-dom';
+// src/components/MovieCard.jsx
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function MovieCard({title}) {
-  
+function MovieCard({ title, id }) {
   return (
     <article>
-        <h2>{title}</h2>
-        {/* What should go here? */}
+      <h2>{title}</h2>
+      <Link to={`/movie/${id}`}>View Details</Link>
     </article>
   );
+}
+MovieCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default MovieCard;
+
