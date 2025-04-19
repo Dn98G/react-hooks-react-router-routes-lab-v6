@@ -1,4 +1,3 @@
-// src/pages/Actors.jsx
 import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 

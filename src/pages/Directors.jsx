@@ -1,4 +1,3 @@
-// src/pages/Directors.jsx
 import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 
