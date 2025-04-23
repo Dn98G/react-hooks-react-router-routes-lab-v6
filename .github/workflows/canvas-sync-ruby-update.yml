@@ -23,7 +23,7 @@ jobs:
       - name: Install github-to-canvas
         run: gem install github-to-canvas
 
-      # Secret stored in learn-co-curriculum Settings/Secrets
+      # Secret stored in learn-co-curriculum Settings or Secrets
       - name: Sync from .canvas file
         run: github-to-canvas -a -lr
         env:
